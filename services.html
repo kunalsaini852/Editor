@@ -1,0 +1,393 @@
+<html>
+<head>
+    <title>Editor - Services</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+        }
+
+        header {
+            background: #0f172a;
+            padding: 20px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            color: white;
+
+            text-align: center;
+
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #dbeafe;
+        }
+
+        .services {
+            padding: 70px 8%;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 45px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .card {
+            width: 310px;
+            background: white;
+            padding: 35px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 5px 20px #0002;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .price {
+            color: #2563eb;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .order-button {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            padding: 12px 22px;
+
+            background: #2563eb;
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 7px;
+        }
+
+        .order-button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+
+            text-align: center;
+
+            padding: 35px;
+        }
+
+        footer h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            color: #94a3b8;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 20px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Editor
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#order">Place Order</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>Our Services</h1>
+
+    <p>
+        Choose the Editing service you need.
+    </p>
+
+</section>
+
+
+<section class="services">
+
+    <h2>What Can We Do For You?</h2>
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="icon">
+                 🪄
+            </div>
+
+            <h3>Ai+NR Editing Here</h3>
+
+            <p>
+                All Ai+Video Editing Tools 
+                Editing Here 
+            </p>
+
+            <div class="price">
+                Starting from $6.99
+            </div>
+
+            <a
+                href="index.html#order"
+                class="order-button"
+            >
+                Order Now
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                📸
+            </div>
+
+            <h3>Photo Editing</h3>
+
+            <p>
+                Improve And Enhance Your Photos
+                Into A Realistic And 4K Version
+            </p>
+
+            <div class="price">
+                Starting from $2.99
+            </div>
+
+            <a
+                href="index.html#order"
+                class="order-button"
+            >
+                Order Now
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                ✨
+            </div>
+
+            <h3> Posters </h3>
+
+            <p>
+                Design A Most Affordable And Cheap
+                Poster making For Your Shop Or Even For An Thing
+            </p>
+
+            <div class="price">
+                Starting from $3.99 
+                But Now With Special Offers At $0.99
+            </div>
+
+            <a
+                href="index.html#order"
+                class="order-button"
+            >
+                Order Now
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                🎨 🪄
+            </div>
+
+            <h3>Animation Edits</h3>
+
+            <p>
+                Make Your Clips WIth Bounce And Speed Ramp 
+                You Only Gives Us The Clips We Can Create The Edits with Full Ramp
+            </p>
+
+            <div class="price">
+                Starting from $9.99
+            </div>
+
+            <a
+                href="index.html#order"
+                class="order-button"
+            >
+                Order Now
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                ✏️ 📝
+            </div>
+
+            <h3>4K Video Editing</h3>
+
+            <p>
+                Change your Raw clips into 
+                A cinematic and Better View
+            </p>
+
+            <div class="price">
+                Starting from $9.99 With 20% OFF
+                 Now At $7.99
+            </div>
+
+            <a
+                href="index.html#order"
+                class="order-button"
+            >
+                Order Now
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                💡
+            </div>
+
+            <h3>Custom Task</h3>
+
+            <p>
+                Have a different Editing Task?
+                Tell us what you need and we'll
+                review your request.
+            </p>
+
+            <div class="price">
+                Custom Price
+            </div>
+
+            <a
+                href="index.html#order"
+                class="order-button"
+            >
+                Request Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h3>Mr.Kunal Saini</h3>
+
+    <p>
+        Editing tasks made simple.
+    </p>
+
+    <p>
+        © 2026 Editor
+    </p>
+
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,408 @@
+<html>
+<head>
+    <title>Editor</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 50px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            color: white;
+
+            text-align: center;
+
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+
+        .hero-animation {
+    width: 40%;
+    max-width: 1000px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+
+        .button {
+            background: #000000;
+            color: #d2d812;
+
+            padding: 30px 50px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+        .services {
+            padding: 70px 20px;
+
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 35px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+
+            flex-wrap: wrap;
+
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+
+            width: 280px;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 5px 20px #0002;
+        }
+
+        .card .icon {
+            font-size: 45px;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        .order {
+            background: #dbeafe;
+
+            padding: 70px 20px;
+        }
+
+        .box {
+            background: white;
+
+            max-width: 650px;
+
+            margin: auto;
+
+            padding: 40px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 5px 20px #0002;
+        }
+
+        .box h2 {
+            text-align: center;
+
+            font-size: 32px;
+        }
+
+        label {
+            display: block;
+
+            margin-top: 20px;
+
+            margin-bottom: 7px;
+
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+
+            padding: 14px;
+
+            border: 1px solid #cbd5e1;
+
+            border-radius: 7px;
+
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 130px;
+
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+
+            margin-top: 25px;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 7px;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        #result {
+            text-align: center;
+
+            margin-top: 20px;
+
+            color: #15803d;
+
+            font-weight: bold;
+        }
+
+        footer {
+            background: #0f172a;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .box {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Editor
+    </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="#order">Place Order</a>
+</nav>
+
+
+</header>
+
+
+<section class="hero" id="home">
+
+    <h1>Welcome to Editor</h1>
+
+    <p>
+        Give your website task to an editor.
+    </p>
+
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjJkczl5ZThjNGoyamF6OWg1ZTh6Nm81cno1dHRvbHJvdjQ0bDJ0ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RG4bI0dOqtpksbqlFV/giphy.gif" alt="Website animation">
+
+    <a href="#order" class="button">
+                    Place an Order
+    </a>
+
+</section>
+
+<section class="order" id="order">
+
+    <div class="box">
+
+        <h2>Place Your Order</h2>
+
+        <form id="orderForm">
+
+            <label>Name</label>
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Your name"
+                required
+            >
+
+
+            <label>Email</label>
+
+            <input
+                id="email"
+                type="email"
+                placeholder="Your email"
+                required
+            >
+
+
+            <label>Website Name</label>
+
+            <input
+                id="website"
+                type="text"
+                placeholder="Your website name"
+                required
+            >
+
+
+            <label>What do you need?</label>
+
+            <select id="service" required>
+
+                <option value="">
+                    Choose a service
+                </option>
+
+                <option>
+                    Create a Website
+                </option>
+
+                <option>
+                    Design a Website
+                </option>
+
+                <option>
+                    Change a Website
+                </option>
+
+                <option>
+                    Other
+                </option>
+
+            </select>
+
+
+            <label>Describe Your Task</label>
+
+            <textarea
+                id="task"
+                placeholder="Write your task here..."
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Send Order
+            </button>
+
+        </form>
+
+
+        <div id="result"></div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h3>Editor</h3>
+
+    <p>
+        Website tasks made simple.
+    </p>
+
+    <p>
+        © 2026 Editor
+    </p>
+
+</footer>
+
+
+<script>
+
+    document
+        .getElementById("orderForm")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let name =
+                document.getElementById("name").value;
+
+            let service =
+                document.getElementById("service").value;
+
+            document.getElementById("result").innerHTML =
+                "✅ Order received! " +
+                name +
+                ", your " +
+                service +
+                " request has been submitted.";
+
+            this.reset();
+
+        });
+
+</script>
+
+</body>
+</html>
